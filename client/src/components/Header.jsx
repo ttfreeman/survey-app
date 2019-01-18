@@ -17,6 +17,9 @@ class Header extends React.Component {
         );
       default:
         return [
+          <li key="0">
+            <Link to="/surveys">Dashboard</Link>
+          </li>,
           <li key="1">
             <Payments />
           </li>,
