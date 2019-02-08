@@ -8,8 +8,8 @@ class Dashboard extends React.Component {
     return (
       <div style={{ textAlign: "center" }}>
         <SurveyList />
-        <div className="fixed-action-btn">
-          <Link to="/surveys/new" className="btn-floating btn-large red">
+        <div className="fixed-action-btn" style={{ margin: "4rem" }}>
+          <Link to="/surveys/new" className="btn-floating btn-large blue">
             <i className="large material-icons">add</i>
           </Link>
         </div>

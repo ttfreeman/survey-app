@@ -10,11 +10,7 @@ class Header extends React.Component {
       case null:
         return;
       case false:
-        return (
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
-        );
+        return <Link to="/Login">Login</Link>;
       default:
         return [
           <li key="0">
@@ -35,10 +31,14 @@ class Header extends React.Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper">
+        <div
+          className="nav-wrapper blue darken-2"
+          style={{ padding: "0 1rem" }}
+        >
           <Link to="/" className="brand-logo">
-            SurveyApp
+            AIS<i class="large material-icons">send</i>
           </Link>
+
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {this.renderContent()}
           </ul>
